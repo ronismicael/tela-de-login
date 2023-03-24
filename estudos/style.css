@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../imagens/pexels-francesco-ungaro-2325446\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login{
+    background-color: rgba(0, 0, 0, 0.651);
+
+    width: 300px;
+    height: 450px;
+    padding: 5px;
+    
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    transition: width .3s, height .3s;
+
+}
+
+div#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    
+}
+
+
+div#formulario > h1{
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 2em;
+}
+
+div#formulario>img{
+   
+    margin-bottom: 30px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+div#formulario>form{
+    width: 100%;
+    
+}
+
+div.campo>input{
+    width: 98%;
+    height: 30px;
+    margin: 4px;
+    background-color: rgba(0, 0, 0, 0.712);
+    border: none;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+div.campo>label{
+    display: none;
+}
+
+div.campo>input:hover{
+    background-color: white;
+    color: black;
+}

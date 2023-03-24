@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estudos/style.css">
+
+    <link rel="stylesheet" href="estudos/media-querys.css">
+
+    <title>Tela de login responsiva </title>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="formulario">
+                <h1>Login</h1>
+
+                <img src="./imagens/pexels-simon-robben-614810.jpg" alt="foto de perfil do usuário">
+
+            
+
+                <form action="php.php" method="post">
+
+                    <div class="campo">
+                        <label for="iemail">Email</label>
+                        <input type="email" name="emial" id="iemail" placeholder="Seu email" autocomplete="email" maxlength="30" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" minlength="8" max="10" required>
+                    </div>
+
+                    <div class="campo">
+                        <input type="submit" value="Entrar">
+                        <input type="submit" value="Registre-se">
+                    </div>
+            
+                </form>
+            </div>    
+        </section>
+    </main>
+</body>
+</html>
